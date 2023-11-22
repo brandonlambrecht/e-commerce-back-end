@@ -59,4 +59,4 @@ First fork the repo and create a branch that will merge into the main. Then make
 
 If you have any questions about the repo, open an issue or contact me at [brandonlambrecht](https//github.com/brandonlambrecht/).
 
-GitHub Link :
+GitHub Link : https://github.com/brandonlambrecht/e-commerce-back-end
