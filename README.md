@@ -3,7 +3,7 @@
 
   ## Description
   
-  This project is the back end for a generic e-commerce site using one-to-many and many-to-many database relationships with Sequelize and MySQL.
+  This project is the back end for an e-commerce website using one-to-many and many-to-many database relationships with Sequelize and MySQL.
 
 The technologies used in this application are:
 
