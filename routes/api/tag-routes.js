@@ -1,8 +1,8 @@
 const router = require('express').Router();
 const { Tag, Product, ProductTag } = require('../../models');
 
-// The `/api/tags` endpoint
 
+// Find all tags, `/api/tags` endpoint
 router.get("/", async (req, res) => {
   try {
     const data = await Tag.findAll({
@@ -20,9 +20,7 @@ router.get("/", async (req, res) => {
   }
 });
 
-/**
- * Find a single tag by its `id` including its associated Product data
- */
+// Find single tag by id
 router.get("/:id", async (req, res) => {
   try {
     const data = await Tag.findByPk(req.params.id, {
@@ -40,13 +38,7 @@ router.get("/:id", async (req, res) => {
   }
 });
 
-/**
- * Create a new tag.
- * The Request body should look like this:
- * {
- *    tag_name: "Jazz"
- * }
- */
+// Create new tag
 router.post("/", async (req, res) => {
   try {
     const data = await Tag.create({
@@ -58,15 +50,9 @@ router.post("/", async (req, res) => {
   }
 });
 
-/**
- * Update a tag.
- * The Request body should look like this:
- * {
- *    tag_name: "Blues"
- * }
- */
+// Update new tag by id
 router.put("/:id", async (req, res) => {
-  // update a tag's name by its `id` value
+ 
   try {
     const data = await Tag.update(
       { tag_name: req.body.tag_name },

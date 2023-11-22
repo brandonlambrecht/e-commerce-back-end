@@ -3,7 +3,7 @@ const { Category, Product } = require('../../models');
 
 
 
-//Find all categories, `/api/categories` endpoint
+// Find all categories, `/api/categories` endpoint
 router.get('/', async (req, res) => {
  
   try {
@@ -22,7 +22,7 @@ router.get('/', async (req, res) => {
   }
 });
 
-//Find category by id
+// Find category by id
 router.get('/:id', async (req, res) => {
 
   try {
