@@ -22,7 +22,7 @@ None
 
 [Usage](#usage)
 
-[Demo] (#demo)
+[Demo](#demo)
 
 [Contribution](#contribution)
 
